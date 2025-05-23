@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Gamaliel Academy</title>
+  </head>
+  <body>
     <main>
-        <section>
-            
-        </section>
+      <section class="main-section">
+        <div class="sidebar">
+          <svg class="icon-headdress">
+            <use href="./image/icons.svg#icon-headdress"></use>
+          </svg>
+          <p class="sitebar-text">by Mariia Brai</p>
+        </div>
+        <div class="main-content">
+          <div class="main-first-block">
+            <p class="main-paragraph top-text">BY MARIA BRAI</p>
+            <p class="main-paragraph second-text">Твоя впевненість починається тут</p>
+            <h1 class="main-text ">
+              <span class="main-text-gradient">GAMALIEL</span>
+              <span class="main-sectext-gradient">ACADEMY</span>
+            </h1>
+          </div>
+          <div><img src="./image/headdress.png" alt="headdress" /></div>
+          <p>
+            <span>Менторська академія</span> для дівчат , де уроки англійської —
+            <span>це не просто граматика</span>.Це шлях до себе: індивідуальний
+            підхід, <span>підтримка, розвиток.</span>
+          </p>
+        </div>
+        <div>
+          <button>ПОЧАТИ НАВЧАННЯ</button>
+          <div class="countdown-container">
+            <p class="">До початку навчання</p>
+            <div id="countdown">
+              <span id="days">00</span> : <span id="hours">00</span> :
+              <span id="minutes">00</span> :
+              <span id="seconds">00</span>
+            </div>
+            <div>
+              <p>Днів</p>
+              <p>Годин</p>
+              <p>Хвилин</p>
+              <p>Секунд</p>
+            </div>
+            <div class="watch">
+              <img src="./image/watch.png" alt="watch" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
+  <script src="./src/script.js"></script>
 </html>
