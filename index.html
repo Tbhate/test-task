@@ -9,55 +9,76 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Gamaliel Academy</title>
   </head>
   <body>
     <main>
       <section class="main-section">
-        <div class="sidebar">
-          <svg class="icon-headdress">
-            <use href="./image/icons.svg#icon-headdress"></use>
-          </svg>
-          <p class="sitebar-text">by Mariia Brai</p>
-        </div>
-        <div class="main-content">
-          <div class="main-first-block">
-            <p class="main-paragraph top-text">BY MARIA BRAI</p>
-            <p class="main-paragraph second-text">Твоя впевненість починається тут</p>
-            <h1 class="main-text ">
-              <span class="main-text-gradient">GAMALIEL</span>
-              <span class="main-sectext-gradient">ACADEMY</span>
-            </h1>
-          </div>
-          <div><img src="./image/headdress.png" alt="headdress" /></div>
-          <p>
-            <span>Менторська академія</span> для дівчат , де уроки англійської —
-            <span>це не просто граматика</span>.Це шлях до себе: індивідуальний
-            підхід, <span>підтримка, розвиток.</span>
-          </p>
-        </div>
         <div>
-          <button>ПОЧАТИ НАВЧАННЯ</button>
-          <div class="countdown-container">
-            <p class="">До початку навчання</p>
-            <div id="countdown">
-              <span id="days">00</span> : <span id="hours">00</span> :
-              <span id="minutes">00</span> :
-              <span id="seconds">00</span>
+          <img src="./image/notebook.png" alt="" class="notebook" />
+        </div>
+        <div class="main-container">
+          <div class="sidebar">
+            <svg class="icon-headdress">
+              <use href="./image/icons.svg#icon-headdress"></use>
+            </svg>
+            <p class="sitebar-text">by Mariia Brai</p>
+          </div>
+          <div class="main-content">
+            <div class="main-first-block">
+              <p class="main-paragraph top-text">BY MARIA BRAI</p>
+              <p class="main-paragraph second-text">
+                ТВОЯ ВПЕВНЕНІСТЬ ПОЧИНАЄТЬСЯ ТУТ
+              </p>
+              <h1 class="main-text">
+                <span class="main-text-gradient">GAMALIEL</span>
+                <span class="main-sectext-gradient">ACADEMY</span>
+              </h1>
             </div>
-            <div>
-              <p>Днів</p>
-              <p>Годин</p>
-              <p>Хвилин</p>
-              <p>Секунд</p>
+            <div class="basic-block">
+              <img src="./image/headdress.png" alt="headdress" / style="width:
+              200px; height: auto;">
+              <p class="basic-text">
+                <span style="font-weight: 700">Менторська академія</span> для
+                дівчат , де уроки англійської —
+                <span style="color: #a60000; font-weight: 600"
+                  >це не просто граматика.</span
+                >
+                <br />Це шлях до себе: індивідуальний підхід,
+                <span style="text-decoration: underline"
+                  >підтримка, розвиток.</span
+                >
+              </p>
             </div>
-            <div class="watch">
-              <img src="./image/watch.png" alt="watch" />
+          </div>
+          <div class="countdown-block">
+            <button class="button-main">ПОЧАТИ НАВЧАННЯ</button>
+            <div class="countdown-container">
+              <p class="count-text">До початку навчання</p>
+              <div id="countdown" class="countdown">
+                <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+              </div>
+              <div class="time">
+                <p>Днів</p>
+                <p>Годин</p>
+                <p>Хвилин</p>
+                <p>Секунд</p>
+              </div>
+              <div class="watch">
+                <img src="./image/watch.png" alt="watch" />
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <img src="./image/girl.png" alt="" class="bg-girl" />
+      <img src="./image/shadow.png" alt="" class="shadow" />
+      <img src="./image/plane.png" alt="plane" class="plane">
+      <img src="./image/lighttext.png" alt="" class="lightxt">
+      <img src="./image/lighttext.png" alt="" class="lightbtn">
+      <img src="./image/lighttext.png" alt="" class="lightbtnsec">
+
     </main>
   </body>
   <script src="./src/script.js"></script>
