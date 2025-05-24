@@ -34,6 +34,8 @@
               <h1 class="main-text">
                 <span class="main-text-gradient">GAMALIEL</span>
                 <span class="main-sectext-gradient">ACADEMY</span>
+                <img src="./image/lighttext.png" alt="" class="lightxt" />
+                <img src="./image/plane.png" alt="plane" class="plane" />
               </h1>
             </div>
             <div class="basic-block">
@@ -53,11 +55,18 @@
             </div>
           </div>
           <div class="countdown-block">
-            <button class="button-main">ПОЧАТИ НАВЧАННЯ</button>
+            <button id="openModalBtn" class="button-main">
+              ПОЧАТИ НАВЧАННЯ
+            </button>
+            <img src="./image/lighttext.png" alt="" class="lightbtn" />
+            <img src="./image/lighttext.png" alt="" class="lightbtnsec" />
             <div class="countdown-container">
               <p class="count-text">До початку навчання</p>
               <div id="countdown" class="countdown">
-                <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                <span id="days">00</span>:<span id="hours">00</span>:<span
+                  id="minutes"
+                  >00</span
+                >:<span id="seconds">00</span>
               </div>
               <div class="time">
                 <p>Днів</p>
@@ -72,14 +81,23 @@
           </div>
         </div>
       </section>
+
       <img src="./image/girl.png" alt="" class="bg-girl" />
       <img src="./image/shadow.png" alt="" class="shadow" />
-      <img src="./image/plane.png" alt="plane" class="plane">
-      <img src="./image/lighttext.png" alt="" class="lightxt">
-      <img src="./image/lighttext.png" alt="" class="lightbtn">
-      <img src="./image/lighttext.png" alt="" class="lightbtnsec">
-
     </main>
+    <footer >
+      <section class="footer">
+        <p class="footer-text">© 2025  Дмитро Бут</p>
+      </section>
+      
+    </footer>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <h2>Привіт!</h2>
+        <p>Це модальне вікно. Сюди можна додати все, що завгодно.</p>
+      </div>
+    </div>
   </body>
   <script src="./src/script.js"></script>
 </html>
