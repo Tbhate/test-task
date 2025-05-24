@@ -37,52 +37,57 @@ span {
   margin-right: auto;
 }
 /* background */
+.shadow-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("./image/shadow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 .shadow {
   position: absolute;
   right: 0;
-  bottom: 0;
-  z-index: 2;
+  bottom: -159px;
+  z-index: 0;
   pointer-events: none;
 }
 
-.notebook {
+.laptop {
   position: absolute;
   z-index: 0;
   left: 0;
   top: 360px;
   pointer-events: none;
-
 }
 
 .bg-girl {
   position: absolute;
-  z-index: 0;
   right: 142px;
   top: 26px;
   width: 765.49px;
   height: 920px;
   pointer-events: none;
+  z-index: 0;
 }
 
 @media (max-width: 1800px) {
-  .bg-girl{
-   right: 50px;
-  } 
-  
+  .bg-girl {
+    right: 50px;
+  }
 }
 
 @media (max-width: 1650px) {
-  .bg-girl{
-   right: -50px;
-  } 
-  
+  .bg-girl {
+    right: -50px;
+  }
 }
 
 @media (max-width: 1450px) {
-  .bg-girl{
-   right: -150px;
-  } 
-  
+  .bg-girl {
+    right: -150px;
+  }
 }
 .plane {
   position: absolute;
@@ -320,6 +325,7 @@ span {
 }
 
 .countdown {
+  position: relative;
   font-size: 42px;
   font-weight: 600;
   background: linear-gradient(
@@ -330,8 +336,10 @@ span {
     #a70d0d 80%,
     #b30000 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 2;
 }
 
 .countdown span {
@@ -353,19 +361,19 @@ span {
   border-radius: 20px;
   border: none;
   cursor: pointer;
-   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.button-main:hover{
-   box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.6); 
-   transform: scale(1.03);
+.button-main:hover {
+  box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.6);
+  transform: scale(1.03);
 }
 .button-main:active {
   transform: scale(0.95);
 }
 /* footer */
 
-.footer{
+.footer {
   position: relative;
   width: 100%;
   display: flex;
@@ -373,7 +381,7 @@ span {
   padding-top: 144px;
   z-index: 2;
 }
-.footer-text{
+.footer-text {
   position: absolute;
   left: 0;
   width: 100%;
@@ -384,17 +392,16 @@ span {
   color: #8f8f8f;
 }
 
-
 /* Modal window */
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
 }
@@ -420,7 +427,7 @@ span {
   transition: 0.2s;
 }
 
-.close:hover{
+.close:hover {
   color: #a32e2e;
 }
 
